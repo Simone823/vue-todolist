@@ -35,6 +35,21 @@ body{
     background-color: rgba(0, 0, 0, 0.4);
     padding: 20px;
     box-shadow: 0 0 25px #00ff00;
+    animation: box-shadow 1s linear infinite;
+}
+
+@keyframes box-shadow {
+    from{
+        box-shadow: 0 0 25px #00ff00;
+    }
+
+    50%{
+        box-shadow: 0 0 60px #00ff00;
+    }
+
+    100%{
+        box-shadow: 0 0 25px #00ff00;
+    }
 }
 
 .todo_wrapper{
