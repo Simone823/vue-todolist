@@ -99,13 +99,17 @@ body{
 
 .list_todo ul li{
     list-style: none;
-    font-size: 20px;
     border: 1px solid #ffcc00;
     padding: 5px 10px;
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 15px;
+}
+
+.list_todo ul li p{
+    font-size: 20px;
 }
 
 .icons {
@@ -149,4 +153,8 @@ body{
 .check i,
 .delete i {
     color: black;
+}
+
+.text-line-through{
+    text-decoration: line-through;
 }
