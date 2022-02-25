@@ -38,13 +38,18 @@ const app = new Vue({
 
             // Se la proprietà done del mio array oggeti arrayList è uguale a false
             if (el.done == false){
-                
+
                 // Allora la proprietà done dell'elemento sarà true
                 el.done = true;
             } else {
                 el.done = false;
             }
             console.log(el.done);
+        },
+
+        // Funzione che al click di delete rimuove la lista oggeto creata dall'utente
+        listRemove: function(i){
+            this.arrayList.splice(i, 1); 
         }
     }
 });
