@@ -30,9 +30,9 @@
         <div class="todo_wrapper">
             
             <!-- Logo -->
-            <div class="logo">
-                <img src="img/task-list.png" alt="">
-                <h1>Vue TodoList</h1>
+            <div class="logo" v-for="element in arrayLogo">
+                <img :src="element.logo" alt="Logo">
+                <h1>{{element.testoLogo}}</h1>
             </div>
 
             <!-- Input testo e pulsante per aggiungere un nuovo todo -->
