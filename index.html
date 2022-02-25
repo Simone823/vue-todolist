@@ -37,7 +37,7 @@
 
             <!-- Input testo e pulsante per aggiungere un nuovo todo -->
             <div class="new_todo">
-                <input type="text" v-model="message">
+                <input type="text" v-model="message" @keyUp.enter="newListTodo">
                 <button @click="newListTodo"><i class="fas fa-plus"></i></button>
             </div>
 
