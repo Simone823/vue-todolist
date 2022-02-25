@@ -3,6 +3,14 @@ const app = new Vue({
     el: "#app",
     data: {
 
+        // Array oggetti logo
+        arrayLogo: [
+            {
+                logo: "img/task-list.png",
+                testoLogo: "Vue TodoList",
+            },
+        ],
+
         // Array oggetti lista
         arrayList: [
             {
