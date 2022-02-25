@@ -37,15 +37,15 @@
 
             <!-- Input testo e pulsante per aggiungere un nuovo todo -->
             <div class="new_todo">
-                <input type="text">
-                <button><i class="fas fa-plus"></i></button>
+                <input type="text" v-model="message">
+                <button @click="newListTodo"><i class="fas fa-plus"></i></button>
             </div>
 
             <!-- Lista todo -->
             <div class="list_todo">
                 <ul>
-                    <li>
-                        Make todolist design
+                    <li v-for="(element, index) in arrayList">
+                        {{element.testo}}
                         <!-- Icone -->
                         <div class="icons">
                             <div class="check">
