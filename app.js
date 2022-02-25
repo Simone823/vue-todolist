@@ -28,6 +28,12 @@ const app = new Vue({
                 alert("Inserisci un testo");
             }
             this.message = "";
+        },
+
+        // Funzione che cambia il done al click di check
+        listCompleted: function(){
+            this.done = true;
+            console.log(this.done);
         }
     }
 });
