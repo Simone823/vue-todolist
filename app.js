@@ -49,6 +49,7 @@ const app = new Vue({
 
                 // Allora la proprietà done dell'elemento sarà true
                 el.done = true;
+                this.arrayList.sort()
             } else {
                 el.done = false;
             }
@@ -57,7 +58,12 @@ const app = new Vue({
 
         // Funzione che al click di delete rimuove la lista oggeto creata dall'utente
         listRemove: function(i){
-            this.arrayList.splice(i, 1); 
+            this.arrayList.splice(i, 1);
+        },
+
+        // Funzione che al click di delete all rimuove tutti gli elementi dall'array oggetto arrayList
+        listDeleteAll: function(){
+            while(typeof (index = this.arrayList.shift()) !== "undefined" );
         }
     }
 });
