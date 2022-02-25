@@ -60,6 +60,7 @@ body{
     justify-content: center;
     align-items: center;
     gap: 25px;
+    margin-bottom: 40px;
 }
 
 .new_todo input{
@@ -87,4 +88,56 @@ body{
 
 .new_todo button i{
     font-size: 20px;
+}
+
+.list_todo{
+    color: white;
+    /* border: 1px solid red; */
+    width: 40%;
+    margin: 0 auto;
+}
+
+.list_todo ul li{
+    list-style: none;
+    font-size: 20px;
+    border: 1px solid #ffcc00;
+    padding: 5px 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+}
+
+.check{
+    background-color: #00ff00;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.delete{
+    background-color: salmon;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.check i,
+.delete i {
+    color: black;
 }
