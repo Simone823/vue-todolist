@@ -78,12 +78,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 25px;
+    gap: 12px;
     margin-bottom: 40px;
 }
 
 .new_todo input{
-    width: 200px;
+    width: 250px;
     padding: 5px 15px;
     border: none;
     border-radius: 25px;
@@ -97,6 +97,12 @@ body{
     border-radius: 25px;
     cursor: pointer;
     opacity: 0.6;
+}
+
+.new_todo .delete_all{
+    background-color: red;
+    font-size: 18px;
+    color: white;
 }
 
 /* Hover button new_todo */
