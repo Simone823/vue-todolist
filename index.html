@@ -45,14 +45,13 @@
             <div class="list_todo">
                 <ul>
                     <li v-for="(element, index) in arrayList">
-                        {{element.testo}}
+                        <p :class="element.done == true ? 'text-line-through' : '' ">{{element.testo}}</p>
                         <!-- Icone -->
                         <div class="icons">
-                            <div class="check">
+                            <div class="check" @click="listCompleted(element)">
                                 <i class="fas fa-check"></i>
                             </div>
                             <div class="delete">
-
                                 <i class="fas fa-trash"></i>
                             </div>
                         </div>
