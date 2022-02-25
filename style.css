@@ -28,13 +28,18 @@ body{
     padding: 40px 0;
 }
 
-.todo_wrapper{
-    width: 900px;
+#app{
+    flex-basis: 60%;
     min-height: 500px;
     border-radius: 25px;
     background-color: rgba(0, 0, 0, 0.4);
     padding: 20px;
     box-shadow: 0 0 25px #00ff00;
+}
+
+.todo_wrapper{
+    max-width: 100%;
+    height: 100%;
 }
 
 .logo{
@@ -92,11 +97,12 @@ body{
 .list_todo{
     color: white;
     /* border: 1px solid red; */
-    width: 40%;
+    width: 45%;
     margin: 0 auto;
 }
 
 .list_todo ul li{
+    width: 100%;
     list-style: none;
     border: 1px solid #ffcc00;
     padding: 5px 10px;
@@ -105,6 +111,8 @@ body{
     justify-content: space-between;
     align-items: center;
     margin-bottom: 15px;
+    flex-wrap: wrap;
+    row-gap: 15px;
 }
 
 .list_todo ul li p{
