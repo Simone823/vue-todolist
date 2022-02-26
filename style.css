@@ -164,6 +164,22 @@ body{
 .delete:hover {
     opacity: 1;
     transition: opacity 200ms ease-in-out;
+    animation: rotate 1s linear;
+}
+
+@keyframes rotate {
+    from{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.1) rotate(360deg);
+    }
+
+    100%{
+        transform: rotate(360deg) scale(1);
+    }
+    
 }
 
 .check img,
