@@ -150,27 +150,13 @@ body{
 }
 
 .check{
-    background-color: #00ff00;
-    width: 22px;
-    height: 22px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
     cursor: pointer;
-    opacity: 0.4;
+    opacity: 0.5;
 }
 
 .delete{
-    background-color: salmon;
-    width: 22px;
-    height: 22px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
     cursor: pointer;
-    opacity: 0.4;
+    opacity: 0.5;
 }
 
 /* Hover icone */
@@ -180,9 +166,9 @@ body{
     transition: opacity 200ms ease-in-out;
 }
 
-.check i,
-.delete i {
-    color: black;
+.check img,
+.delete img {
+    display: block;
 }
 
 .text-line-through{
