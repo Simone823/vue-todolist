@@ -164,7 +164,7 @@ body{
 .delete:hover {
     opacity: 1;
     transition: opacity 200ms ease-in-out;
-    animation: rotate 1s linear;
+    animation: rotate 600ms linear;
 }
 
 @keyframes rotate {
